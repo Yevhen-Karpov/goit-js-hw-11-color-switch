@@ -10,6 +10,7 @@ const colors = [
 const startBtn = document.querySelector('[data-action="start"]');
 const stopBtn = document.querySelector('[data-action="stop"]');
 const bodyColor = document.body.style;
+let timerId = null;
 
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
